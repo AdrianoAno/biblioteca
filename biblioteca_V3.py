@@ -163,7 +163,7 @@ class Biblioteca:
             print("\n*** Livro não encontrado. ***\n")
             return
 
-            # Encontrar o usuário que está com o livro (em um sistema real, isso seria mais direto)
+            # Encontrar o usuário que está com o livro
         usuario_com_livro = None
         for u in self._usuarios:
             if livro in u._livros_emprestados:
