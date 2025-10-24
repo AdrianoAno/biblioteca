@@ -172,7 +172,6 @@ class Biblioteca:
             
         if not usuario_com_livro:
             print(f"\n*** Erro: Este livro não consta como emprestado por nenhum usuário. ***\n")
-            # Mesmo assim, tentaremos devolver para corrigir o estado
             if not livro.disponivel:
                 livro.devolver()
                 print("\n*** Status do livro corrigido para 'Disponível'. ***\n")
